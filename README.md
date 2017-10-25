@@ -6,7 +6,7 @@ Replicated YAML using a git repository.
 
 ### Pipeline Overview
 
-The project includes CI configs for [Travis CI](https://travis-ci.org) and [CircleCI](https://cicleci.com). Both configs will:
+The project includes CI configs for [Travis CI](https://travis-ci.org) and [CircleCI](https://circleci.com). Both configs will:
 
 **On pull requests**:
 
