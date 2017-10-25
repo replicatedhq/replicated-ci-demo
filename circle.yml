@@ -1,0 +1,28 @@
+machine:
+  environment:
+    OUTPUT_DIR: "$CIRCLE_TEST_REPORTS"
+  pre:
+    - mkdir ~/.yarn-cache
+  node:
+    version: 8.7.0
+
+dependencies:
+  override:
+    - make deps-lint
+
+test:
+  override:
+    - make lint lint_reporter=junit
+
+deployment:
+  unstable:
+    branch: master
+    owner: replicatedhq
+    commands:
+      - make deps-vendor-cli release channel=Unstable
+
+  stable:
+    branch: release
+    owner: replicatedhq
+    commands:
+      - make deps-vendor-cli release channel=Stable

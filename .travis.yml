@@ -1,0 +1,21 @@
+language: node_js
+install: make deps-lint
+script: make lint
+node_js: 8.7
+branches:
+  only:
+    - master
+    - release
+
+
+deploy:
+  - provider: script
+    script: make deps-vendor-cli release
+    on:
+      repo: replicatedhq/replicated-ci-demo
+      branch: master
+  - provider: script
+    script: make deps-vendor-cli release channel=Stable
+    on:
+      repo: replicatedhq/replicated-ci-demo
+      branch: release
