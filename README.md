@@ -6,7 +6,7 @@ Replicated YAML using a git repository.
 
 ### Pipeline Overview
 
-The project includes CI configs for [Travis CI](https://travis-ci.org) and [Circle CI](https://cicleci.com). Both configs will:
+The project includes CI configs for [Travis CI](https://travis-ci.org) and [CircleCI](https://cicleci.com). Both configs will:
 
 **On pull requests**:
 
@@ -55,11 +55,11 @@ If you need help finding the values for these, check out the guide for [Finding 
 
 To enable linting, you'll need to be using a build environment that provides a
 reasonably recent version of nodejs. We use 8.7.0 in this example, see `circle.yml`
-and `.travis.yml` for examples on how to set this up for [Travis CI](https://travis-ci.org) and [Circle CI](https://circleci.com)
+and `.travis.yml` for examples on how to set this up for [Travis CI](https://travis-ci.org) and [CircleCI](https://circleci.com)
 
 ### Pull Requests
 
-Repo includes two examples of using CI to test pull requests. Travis will test PRs from forks automatically, but Circle CI requires enabling building for the fork.
+Repo includes two examples of using CI to test pull requests. Travis will test PRs from forks automatically, but CircleCI requires enabling building for the fork.
 
 #### Success
 
