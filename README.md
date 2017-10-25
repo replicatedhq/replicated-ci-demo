@@ -46,27 +46,9 @@ You'll need to set the following env vars to run the project:
 
 `REPLICATED_APP` - either an app slug or app ID
 
-`REPLICATED_API_TOKEN` - a [Replicated API token](https://help.replicated.com/docs/kb/developer-resources/generate-api-token/)
+`REPLICATED_API_TOKEN` - a token for the [Replicated  Vendor API](https://help.staging.replicated.com/categories/vendor-api/)
 
-**The app slug** can be retrieved by visiting [https://vendor.replicated.com](https://vendor.replicated.com) and inspecting the URL when logged in. URL will have the form:
-
-```
-https://vendor.replicated.com/apps/<app slug>/releases
-```
-
-so if the URL was
-
-```
-https://vendor.replicated.com/apps/counter/releases
-```
-
-then you'd set
-
-```sh
-REPLICATED_APP=counter
-```
-
-**An api token** can be retrieved by visiting [https://vendor.replicated.com](https://vendor.replicated.com) and navigating to "Teams and Tokens" And then to "API Tokens". You'll need to create a token with write access in order to create releases.
+If you need help finding the values for these, check out the guide for [Finding Your API Token and App ID](https://help.staging.replicated.com/docs/kb/developer-resources/finding-your-api-token-and-app-id/)
 
 
 ### Build Prequisites
