@@ -65,7 +65,7 @@ Repo includes two examples of using CI to test pull requests. Travis will test P
 
 There's a passing pull request at https://github.com/replicatedhq/replicated-ci-demo/pull/1. It has all its checks passing:
 
-![checks-passing](./img/checks-passing.png)
+![checks-passing](./doc/checks-passing.png)
 
 
 #### Failure
@@ -73,13 +73,13 @@ There's a passing pull request at https://github.com/replicatedhq/replicated-ci-
 There's a failing pull request at https://github.com/replicatedhq/replicated-ci-demo/pull/2. It has checks failing:
 
 
-![checks-fail](./img/checks-fail.png)
+![checks-fail](./doc/checks-fail.png)
 
 The travis build shows the failure in the build log:
 
-![travis-output-failed](./img/travis-output-failed.png)
+![travis-output-failed](./doc/travis-output-failed.png)
 
 We can even use replicated-lint's JUnit XML reporter to integrate with Circle's test report parsing:
 
-![circle-tests-failed](./img/circle-tests-failed.png)
+![circle-tests-failed](./doc/circle-tests-failed.png)
 
