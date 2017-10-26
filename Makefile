@@ -7,13 +7,12 @@ deps-vendor-cli:
 	tar xvzf deps/cli.tar.gz -C deps/
 
 deps-lint:
-	npm install --global yarn
-	yarn
+	npm install replicated-lint
 
 deps: deps-lint deps-vendor-cli
 
 lint:
-	`yarn bin`/replicated-lint validate --infile replicated.yml --reporter $(lint_reporter)
+	`npm bin`/replicated-lint validate --infile replicated.yml --reporter $(lint_reporter)
 
 release:
 	cat replicated.yml | deps/replicated release create --promote $(channel) --yaml -
