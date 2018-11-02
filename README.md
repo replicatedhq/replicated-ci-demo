@@ -4,6 +4,11 @@ Replicated CI Demo
 Example project showcasing how to combine several Replicated tools in order to manage
 Replicated YAML using a git repository.
 
+### Scheduler
+
+| [Kubernetes](https://github.com/replicatedhq/replicated-ci-demo/tree/kubernetes) |
+[Swarm](https://github.com/replicatedhq/replicated-ci-demo/tree/swarm) |
+[Native](https://github.com/replicatedhq/replicated-ci-demo/) |
 
 ### Tools
 
