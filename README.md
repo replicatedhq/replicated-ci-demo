@@ -6,9 +6,9 @@ Replicated YAML using a git repository.
 
 ### Scheduler
 
-| [Kubernetes](https://github.com/replicatedhq/replicated-ci-demo/tree/kubernetes) |
-[Swarm](https://github.com/replicatedhq/replicated-ci-demo/tree/swarm) |
-[Native](https://github.com/replicatedhq/replicated-ci-demo/) |
+[Kubernetes](https://github.com/replicatedhq/replicated-ci-demo/tree/kubernetes)
+[Swarm](https://github.com/replicatedhq/replicated-ci-demo/tree/swarm)
+[Native](https://github.com/replicatedhq/replicated-ci-demo/)
 
 ### Tools
 
