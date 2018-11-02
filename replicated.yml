@@ -1,6 +1,5 @@
 ---
 # kind: replicated
-# apiVersion: v1
 replicated_api_version: 2.12.0
 name: My Counter App
 version: 1.0.0
@@ -36,6 +35,11 @@ admin_commands:
 
 host_requirements:
   replicated_version: ">=2.12.0"
+
+monitors:
+    cpuacct:
+        - DB,redis
+        - LB,haproxy
 
 components:
 - name: DB
