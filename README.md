@@ -4,6 +4,12 @@ Replicated CI Demo
 Example project showcasing how to combine several Replicated tools in order to manage
 Replicated YAML using a git repository.
 
+
+### Tools
+
+- [replicated-lint](https://github.com/replicatedhq/replicated-lint)
+- [replicated vendor cli](https://github.com/replicatedhq/replicated)
+
 ### Pipeline Overview
 
 The project includes CI configs for [Travis CI](https://travis-ci.org) and [CircleCI](https://circleci.com). Both configs will:
